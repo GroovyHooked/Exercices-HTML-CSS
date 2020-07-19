@@ -1,0 +1,45 @@
+li {
+  list-style-type: none;
+}
+.liste1 > li:before {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid blue;
+    margin-right: 3px;
+}
+
+.liste2 > li::before{
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 3px solid blue;
+  transform: rotate(45deg);
+  margin-right: 3px;
+}
+
+.liste3 {
+  counter-reset: num;
+}
+
+.liste3  li {
+  counter-increment: num;
+}
+
+.liste3 > li::before {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  content: counter(num);
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  background: blue;
+  color: white;
+  margin-right: 3px;
+
+}
