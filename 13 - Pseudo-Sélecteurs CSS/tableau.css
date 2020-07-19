@@ -1,0 +1,38 @@
+*{
+  text-transform: capitalize;
+
+}
+
+table {
+  border-collapse: collapse;  /* Permet la dispararition des bordures dans tous les navigateur avec la fonction {border: none;}*/
+  border: none;
+}
+
+th, td{
+  padding: 10px;
+
+}
+th[colspan="10"] {
+  font-size: 2em;
+  color: blue;
+}
+tbody > tr:nth-child(even){
+  background-color: #FCB941;
+}
+tbody > tr:nth-child(odd){
+  background-color: #F1654C;
+}
+
+tbody tr:nth-child(odd) td:first-child {
+  color: #fff;
+  background-color: #7E3661;
+}
+tbody tr:nth-child(even) td:first-child {
+  color: #fff;
+  background-color: #888888;
+}
+
+tbody tr:nth-child(odd) td:last-child{
+  background-color: #8870FF;
+  color: white;
+}
