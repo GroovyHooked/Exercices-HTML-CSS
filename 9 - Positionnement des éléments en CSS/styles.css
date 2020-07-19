@@ -1,0 +1,28 @@
+
+.article {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ced4da;
+  width: 332px;
+  height: 332px;
+
+}
+.details {
+  background-color: #3a86ff;
+  border: 1px solid black;
+  position: relative;
+  left: 80px;
+  top: 100px;
+  width: 250px;
+}
+.fix {
+background-color: #3a86ff;
+width: 80px;
+height: 40px;
+position: fixed;
+bottom: 0px;
+right: 0px;
+color: white;
+font-weight: bold;
+
+}
