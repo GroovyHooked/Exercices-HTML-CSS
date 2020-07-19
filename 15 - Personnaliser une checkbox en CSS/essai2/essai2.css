@@ -1,0 +1,64 @@
+input{
+  display: none;
+}
+
+label{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 1.3em;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.5s;
+}
+
+.oui{
+  position: absolute;
+  opacity: 0;
+  color: white;
+  transition: 1s;
+
+
+}
+
+.non{
+  position: absolute;
+  opacity: 1;
+  color: white;
+  transition: 1s;
+  right: 0;
+  padding-right: 15px;
+}
+
+.slider{
+  position: absolute;
+  transition: 1s;
+
+}
+.slider:before{
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  left:0;
+  transition: 1s;
+}
+input:checked + label{
+  background-color: red;
+}
+
+input:checked ~ label .oui{
+  opacity: 1;
+}
+input:checked ~ label .non{
+  opacity: 0;
+}
+input:checked + label .slider::before{
+  left: 75px;
+}
