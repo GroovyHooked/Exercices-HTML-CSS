@@ -1,0 +1,36 @@
+header {
+  background-color: #2F4858;
+
+  text-align: center;
+  color: white;
+}
+aside {
+  border-top: 4px solid #9FE694;
+  background-color: #86BBD8;
+  width: 20%;
+}
+section {
+  padding-left: 3%;
+  background-color: #FAF8F8;
+  width: 80%;
+}
+img.photo {
+  float: left;
+  margin-top: 20%;
+}
+.principal {
+  display: flex;
+}
+aside h1 {
+  margin-left: 5%;
+}
+aside p {
+  margin-left: 20%;
+}
+section h1{
+  text-align: center;
+}
+section h2 {
+  border-bottom: 4px solid #9FE694;
+  width: 50%;
+}
