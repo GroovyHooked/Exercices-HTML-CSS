@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title>Menu simple</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	   li {
+			 border: 1px solid black;
+			 text-align: center;
+			 list-style: none;
+			 padding: 20px;
+		 }
+		 ul {
+			 display: flex;
+			 flex-direction: row;
+			 justify-content: space-around;
+		 }
+		 li:nth-child(2) {      /* Pour colorier la deuxieme case correspondant à un "li"*/
+			 background-color: blue;
+		 }
+		 a:link {
+			 color: black;
+			 text-decoration: none;
+		 }
+		 li:nth-child(2) a {
+			 color: white;
+		 }
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
